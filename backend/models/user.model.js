@@ -18,6 +18,10 @@ const userSchema = mongoose.Schema({
 		type: Array,
 		default: [],
 	},
+	identity: {
+		type: String,
+		default: "",
+	},
 });
 
 export const User = mongoose.model("User", userSchema);
